@@ -151,11 +151,6 @@ header .sign:hover{
 .slick-next path {
   fill: black;
 }
-.slick-prev:hover path,
-.slick-next:hover path {
-  fill: #FFFFFF;
-}
-
 .slick-prev {
   left: -35px;
 }
