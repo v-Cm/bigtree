@@ -24,6 +24,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 100px;
+	animation: drop-in 1s ease-out;
 }
 header .content{
 	position: relative;
@@ -34,6 +35,8 @@ header .content h2{
 	color: #adefd1ff;
 	font-size: 5rem;
 	font-weight: 1000;
+	animation: left-in 1.5s ease-in-out;
+	animation-delay: 300ms;
 }
 header .content p{
 	color: white;
@@ -47,6 +50,7 @@ header .sign{
 	background-color: #adefd1ff;
 	text-decoration: none;
 	color: #00203fff;
+	animation: left-in ease 2s;
 }
 header .sign:hover{
 	text-decoration: none;
@@ -71,6 +75,7 @@ header .sign:hover{
 	color: #adefd1ff;
 	padding: 0 1rem;
 	font-size: 0.9rem;
+	transition: ease 100ms;
 }
 .nav-link:hover, .nav-link:focus{
 	color: #00203fff;
@@ -108,13 +113,14 @@ header .sign:hover{
 	text-align: center;
 	padding: 5rem 5%;
 }
-.about h2{
+.heading h2{
 	font-weight: 500;
 	font-size: 3rem;
-	margin-bottom: 2rem;
+	margin: 2rem auto;
 }
 .about p{
 	font-size: 1.2rem;
+	animation: left-in ease 2s;
 }
 
 /*about ends*/
@@ -122,19 +128,16 @@ header .sign:hover{
 /*testimonial starts*/
 
 .test {
-  margin: auto;
+  margin:2rem auto;
   padding: 20px;
   width: 80%;
   max-width: 1200px;
   min-width: 300px;
 }
-.test-heading{
+.heading{
 	text-align: center;
 }
-.test-heading h2{
-	font-weight: 500;
-	font-size: 3rem;
-}
+
 .slick-slider {
   margin: 30px auto 50px;
 }
@@ -149,8 +152,9 @@ header .sign:hover{
 }
 .slick-prev path,
 .slick-next path {
-  fill: black;
+  fill: #00203fff;
 }
+
 .slick-prev {
   left: -35px;
 }
@@ -181,6 +185,7 @@ header .sign:hover{
   margin: 0 ;
   position: relative;
   padding: 0 1rem;
+  animation: left-in ease 2s;
 }
 .quote-container:hover {
   cursor: -webkit-grab;
@@ -250,18 +255,26 @@ header .sign:hover{
 	.about p{
 		font-size: 1rem;
 	}
-	
+	.quote-container{
+		display: flex;
+		flex-direction: column;
+	}
 	.quote-container .quote p {
 		  max-height: 300px;
   		  overflow: auto;
 	}
 	.quote-container .quote{
-		padding: 40px 0 40px 100px;
+		padding:2rem 0;
 		font-size: 15px;
 	}
 	.quote-container .portrait {
 		height: 70px;
 		width: 70px;
+		position: relative;
+	}
+	.heading h2{
+		text-align: center;
+		margin-bottom: 4rem;
 	}
 	
 }
@@ -284,3 +297,23 @@ footer a:hover{
 }
 
 /*footer ends*/
+@keyframes left-in{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+@keyframes drop-in{
+	0%{
+		transform: translateY(-100vh);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0vh);
+		opacity: 1;
+	}
+}
