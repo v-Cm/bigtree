@@ -8,8 +8,10 @@ body{
 	overflow-x: hidden;
 }
 .container-fluid{
-	margin: 0;
-	padding: 0;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /*landing page starts*/
 
@@ -112,6 +114,7 @@ header .sign:hover{
 	font-size: 3rem;
 	margin: 4rem auto;
 	text-align: center;
+	color:#00203fff; 
 }
 
 /*about starts*/
@@ -132,6 +135,7 @@ header .sign:hover{
 .test {
   margin:2rem auto;
   width: 80%;
+  margin-bottom: 5rem;
 }
 
 .slick-slider {
@@ -244,37 +248,7 @@ header .sign:hover{
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
-@media only screen and (max-width: 576px){
-	.about{
-		padding: 2rem;
-	}
-	.about p{
-		font-size: 1rem;
-	}
-	.quote-container{
-		display: flex;
-		flex-direction: column;
-	}
-	.quote-container .quote p {
-		  max-height: 300px;
-  		  overflow: auto;
-	}
-	.quote-container .quote{
-		padding:2rem 0;
-		font-size: 15px;
-	}
-	.quote-container .portrait {
-		height: 70px;
-		width: 70px;
-		position: relative;
-	}
-	.test{
-		text-align: center;
-		margin-bottom: 4rem;
-		padding: 0 5%;
-	}
-	
-}
+
 
 /*testimonial ends*/
 
@@ -294,6 +268,9 @@ footer a:hover{
 }
 
 /*footer ends*/
+
+/*animation starts*/
+
 @keyframes left-in{
 	0%{
 		transform: translateX(-100px);
@@ -314,3 +291,39 @@ footer a:hover{
 		opacity: 1;
 	}
 }
+/*animation ends*/
+
+/*media query starts*/
+
+@media only screen and (max-width: 576px){
+	.about{
+		padding: 2rem;
+	}
+	.about p{
+		font-size: 1rem;
+	}
+	.quote-container{
+		display: flex;
+		flex-direction: column;
+	}
+	.quote-container .quote p {
+		  max-height: 150px;
+  		  overflow: auto;
+	}
+	.quote-container .quote{
+		padding:2rem 0;
+		font-size: 15px;
+	}
+	.quote-container .portrait {
+		height: 70px;
+		width: 70px;
+		position: relative;
+	}
+	.test{
+		text-align: center;
+		margin-bottom:5rem;
+		padding: 0 5%;
+	}
+	
+}
+/*media query ends*/
