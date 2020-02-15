@@ -107,16 +107,18 @@ header .sign:hover{
 
 /*social media ends*/
 
+.heading h2{
+	font-weight: 500;
+	font-size: 3rem;
+	margin: 4rem auto;
+	text-align: center;
+}
+
 /*about starts*/
 
 .about{
 	text-align: center;
 	padding: 5rem 5%;
-}
-.heading h2{
-	font-weight: 500;
-	font-size: 3rem;
-	margin: 2rem auto;
 }
 .about p{
 	font-size: 1.2rem;
@@ -128,10 +130,8 @@ header .sign:hover{
 /*testimonial starts*/
 
 .test {
-  text-align: center;
-}
-.heading{
-	text-align: center;
+  margin:2rem auto;
+  width: 80%;
 }
 
 .slick-slider {
@@ -271,9 +271,8 @@ header .sign:hover{
 	.test{
 		text-align: center;
 		margin-bottom: 4rem;
-                padding:0 auto;
+		padding: 0 5%;
 	}
-
 	
 }
 
