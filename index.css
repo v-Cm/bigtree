@@ -128,10 +128,8 @@ header .sign:hover{
 /*testimonial starts*/
 
 .test {
-  margin:2rem 5%;
-  padding: 20px;
-  max-width: 1200px;
-  min-width: 300px;
+  margin:2rem auto;
+  text-align: center;
 }
 .heading{
 	text-align: center;
